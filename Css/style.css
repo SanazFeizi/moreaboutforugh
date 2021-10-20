@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* base */
+
+.container {
+    width: 60%;
+    margin: auto;
+} 
+
+.flex {
+    display: flex;
+}
+
+.inline-grid {
+    display: inline-grid;
+    margin-left: 20px;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.maintitle {
+    display: flex;
+    margin-top: 132px;
+    margin-left: 97px;
+    font-size: 45px;
+    padding-right: 66px;
+}
+
+.line {
+    margin-right: 82px;
+}
+
+/* interview */
+.interview {
+    margin-top: 100px;
+}
+
+.interview h2 {
+    
+    font-size: 130%;
+    margin-left: 7.75%;
+   word-spacing: 2px;
+}
+
+.interview  p {
+    text-align: justify;
+    padding: 10px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.interview   h2:hover {
+    color: #8c3931;
+    cursor: pointer;
+} 
+ 
+.interview  p:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* .interview:hover  p {
+    opacity: 1;
+    cursor: pointer; */
+}
+
+/* documentary */
+.documentary {
+    margin-top: 20px;
+}
+
+
+.img-link:hover  {
+    background-color:#8c3931;
+    color: #fff;
+}
+
+.documentary h3:hover {
+    color: #8c3931;
+}
+.circle-img {
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
+.circle-img h3 {
+   position: absolute; 
+   top: 48%;
+   left: 6%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.documentary .documentary-img {
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+
+.img-link {
+    background-color: aliceblue;
+    opacity: 0;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-weight: 900;
+    margin: 25px auto;
+    transition: all 1s ease-in-out; 
+    cursor: pointer;
+}
+
+.inline-grid:hover .img-link{
+    opacity: 1;
+    cursor: pointer;
+
+}
+.inline-grid:hover  .documentary-img {
+    opacity: 1;
+    z-index: 8;
+    cursor: pointer;
+}
+.bg-white {
+    background: rgba(255, 255, 255,0.3);
+}
+
+.documentary div {
+    align-items: center;
+}
+.title-movie {
+    position: absolute;
+    top: 1315px;
+    margin-left: 110;
+}
+
+.documentary .inline-grid {
+    z-index: 4;
+}
+
+
+
+/* voice-content */
+
+.voice-section {
+    display: flex;
+    direction: rtl;
+}
+.memory-img {
+    position: relative;
+    display: block!important;
+    margin-top: -207px;
+    margin-right: 0px;
+}
+
+.memory-img {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-top: -200px;
+    
+}
+
+.memory-img p {
+    text-align: right;
+    margin-right: 300px;
+    
+}
+
+.memory-img h3 {
+   position: absolute;
+   right: 250px;
+   top: 26.5%;
+   font-size: 25px;
+   cursor: pointer;
+  
+}
+
+.voice-section h3:hover {
+    color: #8c3931;
+    cursor: pointer;
+    
+}
+.memory-voice:hover #audio-one {
+    opacity: 1;
+    cursor: pointer;
+   
+}
+.memory-voice:hover #audio-two {
+    opacity: 1;
+    cursor: pointer;
+   
+}
+.memory-voice:hover #audio-three {
+    opacity: 1;
+    cursor: pointer;
+   
+}
+.memory-voice:hover #audio-four {
+    opacity: 1;
+    cursor: pointer;
+   
+}
+
+#audio-one {
+    position: absolute;
+    transition-delay: 0.10s;
+    margin-right: 573px;
+    margin-top: -414px;
+    display: flex;
+    opacity: 0;
+    transition: all 1.10s ease-in-out; 
+}
+
+#audio-two {
+    position: absolute;
+    margin-top: -340px;
+    margin-right: 556px;
+    transition-delay: 0.50s;
+    opacity:0;
+    transition: all 1.40s ease-in-out;
+}
+
+#audio-three {
+    position: absolute;
+    margin-top: -266px;
+    margin-right: 539px;
+    transition-delay: 0.100s;
+    opacity: 0;
+    transition: all 1.50s ease-in-out;
+}
+
+#audio-four {
+    position: absolute;
+    transition-delay: 1.40s;
+    opacity: 0;
+    transition: all 1.80s ease-in-out;
+    margin-top: -192px;
+    right: 522px;
+    
+}
