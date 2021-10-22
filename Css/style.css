@@ -31,49 +31,65 @@ header {
     justify-content: center;
 }
 
-.maintitle {
-    display: flex;
-    margin-top: 132px;
-    margin-left: 97px;
-    font-size: 45px;
-    padding-right: 66px;
+.forugh-text {
+    height: fit-content;
+    width: 706px;
+    margin-top: 110px;    
+    margin-left: 79px;
+    padding-right: 40px;
 }
 
 .line {
     margin-right: 82px;
+    margin-top: -120px;
 }
 
 /* interview */
 .interview {
-    margin-top: 100px;
+    margin-top: -1px;
+}
+.interview img {
+    width: 80%;
+    height: fit-content;
+    margin-top: 97px;
+    margin-left: 75px;
 }
 
-.interview h2 {
+.first-frame h3 {
+    position: absolute;
+    margin-left: 362px;
+    margin-top: -71px;
+}
+
+.first-frame h3:hover {
+    color: #8c3931;
+    cursor: pointer;
     
-    font-size: 130%;
-    margin-left: 7.75%;
-   word-spacing: 2px;
 }
 
-.interview  p {
+.interview p {
+    position: absolute;
+    margin-left: 414px;
+    margin-top: -26px;
+    font-size: 14;
+}
+
+.first-frame p1 {
     text-align: justify;
     padding: 10px;
-    margin-top: 20px;
+    top: 100px;
     opacity: 0;
     transition: all 2s ease-in-out;
 }
 
-.interview   h2:hover {
-    color: #8c3931;
-    cursor: pointer;
-} 
+
  
-.interview  p:hover {
+.first-frame  p1:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-/* .interview:hover  p {
+/* .first-frame:hover  p {
     opacity: 1;
     cursor: pointer; */
 }
@@ -96,6 +112,7 @@ header {
     position: relative;
     z-index: 2;
     display: flex;
+    margin-top: 126px;
 }
 
 .circle-img h3 {
@@ -110,6 +127,7 @@ header {
     opacity: 0;
     z-index: 1;
     transition: all 1s ease-in-out;
+    
 }
 
 
@@ -146,7 +164,7 @@ header {
 }
 .title-movie {
     position: absolute;
-    top: 1315px;
+    top: 1493px;
     margin-left: 110;
 }
 
