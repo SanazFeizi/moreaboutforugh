@@ -71,12 +71,12 @@ header {
     position: absolute;
     margin-left: 414px;
     margin-top: -26px;
-    font-size: 14;
+    font-size: 15;
 }
 
 
-.first-frame p1 {
-    text-align: justify;
+.first-frame .column {
+    text-align: unset;
     padding: 10px;
     top: 100px;
     opacity: 0;
@@ -85,17 +85,41 @@ header {
     
 }
 
-
- 
-.first-frame  p1:hover {
+.first-frame  .column:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-/* .first-frame:hover  p {
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+ /* .first-frame:hover  .column {
     opacity: 1;
-    cursor: pointer; */
+    cursor: pointer;  
+} */
+
+.sw {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
+
+.sw:hover  {
+    color: #8c3931;
+}
+
+
+
 
 /* documentary */
 .documentary {
@@ -115,7 +139,7 @@ header {
     position: relative;
     z-index: 2;
     display: flex;
-    margin-top: 15px;
+    margin-top: -4px;
 }
 
 .circle-img h3 {
