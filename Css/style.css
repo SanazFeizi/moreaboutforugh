@@ -74,13 +74,15 @@ header {
     font-size: 14;
 }
 
+
 .first-frame p1 {
     text-align: justify;
     padding: 10px;
     top: 100px;
     opacity: 0;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
     margin-top: 20;
+    
 }
 
 
@@ -113,7 +115,7 @@ header {
     position: relative;
     z-index: 2;
     display: flex;
-    margin-top: 126px;
+    margin-top: 14px;
 }
 
 .circle-img h3 {
@@ -165,7 +167,7 @@ header {
 }
 .title-movie {
     position: absolute;
-    top: 1493px;
+    top: 1494px;
     margin-left: 110;
 }
 
