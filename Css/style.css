@@ -7,6 +7,7 @@ body {
     background-color: #000;
     color: white;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 /* base */
@@ -44,27 +45,21 @@ header {
     margin-top: -120px;
 }
 
+.poster {
+    width: 764px;
+    margin-top: 25px;
+    margin-left: 289px; 
+    margin-bottom: 25px;
+}
 /* interview */
 .interview {
     margin-top: -1px;
 }
-.interview img {
+.interview .frame {
     width: 80%;
     height: fit-content;
     margin-top: 97px;
     margin-left: 75px;
-}
-
-.first-frame h3 {
-    position: absolute;
-    margin-left: 362px;
-    margin-top: -71px;
-}
-
-.first-frame h3:hover {
-    color: #8c3931;
-    cursor: pointer;
-    
 }
 
 .interview p {
@@ -74,15 +69,38 @@ header {
     font-size: 15;
 }
 
+.interview h3 {
+    position: absolute;
+    margin-left: 362px;
+    margin-top: -71px;
+}
+
+.interview h3:hover {
+    color: #8c3931;
+    cursor: pointer;
+}
+
+.interview .paper {
+    width: 47.5%;
+    opacity: 0;
+    margin-top: 97px;
+    margin-left: -644px;
+    position: absolute;
+    z-index: -10;
+    transition: all 2s ease-in-out;
+}
+.interview:hover .paper {
+    opacity: 1;
+    cursor: pointer;
+}
 
 .first-frame .column {
     text-align: unset;
     padding: 10px;
     top: 100px;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
     margin-top: 20;
-    
 }
 
 .first-frame  .column:hover {
@@ -93,15 +111,14 @@ header {
 .column {
     float: left;
     width: 50%;
-  }
+}
   
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
+}
 
  /* .first-frame:hover  .column {
     opacity: 1;
@@ -121,9 +138,35 @@ header {
 
 
 
+
 /* documentary */
 .documentary {
     margin-top: 20px;
+}
+
+.circle-img {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin-top: -4px;
+}
+
+.title-movie {
+    position: absolute;
+    top: 545px;
+    margin-left: 110;
+}
+
+.inline-grid h3 {
+    position: absolute; 
+    top: 48%;
+    left: 6%;
+    font-size: 25px;
+}
+
+.inline-grid h3:hover {
+    color: #8c3931;
+    cursor: pointer;
 }
 
 
@@ -132,31 +175,17 @@ header {
     color: #fff;
 }
 
-.documentary h3:hover {
-    color: #8c3931;
-}
-.circle-img {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    margin-top: -4px;
-}
-
-.circle-img h3 {
-   position: absolute; 
-   top: 48%;
-   left: 6%;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.documentary .documentary-img {
+.inline-grid .documentary-img {
     opacity: 0;
     z-index: 1;
     transition: all 1s ease-in-out;
-    
-}
+} 
 
+.inline-grid:hover  .documentary-img {
+    opacity: 1;
+    z-index: 8;
+    cursor: pointer;
+}
 
 .img-link {
     background-color: aliceblue;
@@ -169,66 +198,53 @@ header {
     font-weight: 900;
     margin: 25px auto;
     transition: all 1s ease-in-out; 
-    cursor: pointer;
 }
 
 .inline-grid:hover .img-link{
     opacity: 1;
     cursor: pointer;
+}
 
-}
-.inline-grid:hover  .documentary-img {
-    opacity: 1;
-    z-index: 8;
-    cursor: pointer;
-}
 .bg-white {
     background: rgba(255, 255, 255,0.3);
 }
 
-.documentary div {
-    align-items: center;
+.inline-grid .movie-circle {
+    opacity: 0;
+    z-index: -20;
+    margin-left: -459px;
+    margin-top: -524;
+    transition: all 2s ease-in-out;
+    width: 440px;   
 }
-.title-movie {
-    position: absolute;
-    top: 1495px;
-    margin-left: 110;
+.inline-grid:hover  .movie-circle {
+    opacity: 1;
+    cursor: pointer;
+    z-index: -20;
 }
-
-.documentary .inline-grid {
-    z-index: 4;
-}
-
-
 
 /* voice-content */
 
 .voice-section {
-    display: flex;
     direction: rtl;
-}
-.memory-img {
-    position: relative;
-    display: block!important;
-    margin-top: -207px;
-    margin-right: 0px;
 }
 
 .memory-img {
     position: relative;
-    display: flex;
-    justify-content: end;
-    margin-top: -200px;
-    
+    display: block!important;
+    margin-top: -207px;
+    margin-right: -13px;
 }
 
 .memory-img p {
     text-align: right;
     margin-right: 300px;
+    margin-top: -12px;
+    position: absolute;
     
 }
 
-.memory-img h3 {
+.memory-voice h3 {
    position: absolute;
    right: 250px;
    top: 26.5%;
@@ -237,7 +253,7 @@ header {
   
 }
 
-.voice-section h3:hover {
+.memory-voice h3:hover {
     color: #8c3931;
     cursor: pointer;
     
@@ -266,7 +282,7 @@ header {
 #audio-one {
     position: absolute;
     transition-delay: 0.10s;
-    margin-right: 573px;
+    margin-right: 552px;
     margin-top: -414px;
     display: flex;
     opacity: 0;
@@ -276,7 +292,7 @@ header {
 #audio-two {
     position: absolute;
     margin-top: -340px;
-    margin-right: 556px;
+    margin-right: 536px;
     transition-delay: 0.50s;
     opacity:0;
     transition: all 1.40s ease-in-out;
@@ -285,7 +301,7 @@ header {
 #audio-three {
     position: absolute;
     margin-top: -266px;
-    margin-right: 539px;
+    margin-right: 520px;
     transition-delay: 0.100s;
     opacity: 0;
     transition: all 1.50s ease-in-out;
@@ -297,6 +313,20 @@ header {
     opacity: 0;
     transition: all 1.80s ease-in-out;
     margin-top: -192px;
-    right: 522px;
+    right: 498px;
     
+}
+.memory-voice .newspaper {
+    opacity: 0;
+    position: relative;
+    margin-top: -828px;
+    margin-right: 0px;
+    transition: all 2s ease-in-out; 
+    z-index: -20;
+}
+
+.memory-voice:hover  .newspaper {
+    opacity: 1;
+    cursor: pointer;
+    z-index: -20;
 }
